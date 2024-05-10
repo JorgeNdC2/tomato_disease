@@ -8,7 +8,7 @@ This repo contains all the code we have used to develop a model that can predict
 
 * Raúl Blázquez Bullón ([@raulblazquezb](https://github.com/raulblazquezb)).
 
-* Jorge Núñez de Cela Román ([@JorgeNdC](https://github.com/JorgeNdC2)).
+* Jorge Núñez de Cela Román ([@JorgeNdC2](https://github.com/JorgeNdC2)).
 
 * Qirun Wu ([@quirunw](https://github.com/qirunw))
 

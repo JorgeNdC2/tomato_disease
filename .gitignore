@@ -4,3 +4,6 @@
 
 # data
 data/input/
+
+# virtualenv
+*env*/
