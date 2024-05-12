@@ -31,6 +31,26 @@ st.markdown(
 
 st.markdown(
     """
+    ### Model selection 🤖
+
+    You can select the model you want to use to classify the tomato leaf image.
+
+    We have two models available:
+
+    - **Pretrained Model**: A model trained with a pretrained model (`DenseNet121`) and trained with the Tomato Leaf Disease Dataset.
+
+    - **Basic Model from Scratch**: A model trained from scratch with the Tomato Leaf Disease Dataset.
+
+    Note that the pretrained model has a higher accuracy than the basic model from scratch, but has a higher computational cost.
+
+    You can select the model you want to use in the dropdown below!
+    """
+)
+
+model = st.selectbox("Select the model you want to use", ["Pretrained Model", "Basic Model from Scratch"])
+
+st.markdown(
+    """
     ### Upload your tomatoes! 📸
 
     You can upload an image of a tomato leaf and we will predict if it has a disease or not.
@@ -48,7 +68,7 @@ if uploaded_file is not None:
 
     # Classify the image
     image = Image.open(uploaded_file)
-    prediction, prob = predict_disease(image)
+    prediction, prob = predict_disease(image, model=model)
     st.write("Done! 🎉")
     st.write(f"Prediction: {prediction}" + 
              (" 🍅! That's a good looking tomato!" if prediction == "Healthy" 

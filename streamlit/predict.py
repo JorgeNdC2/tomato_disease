@@ -6,10 +6,16 @@ from PIL import Image
 from typing import Tuple
 
 # Functions
-def predict_disease(image: Image.Image) -> Tuple[str, float]:
+def predict_disease(image: Image.Image, model: str="Pretrained Model") -> Tuple[str, float]:
+
+    # Dict models
+    dict_models = {
+        "Pretrained Model": "../models/model_pretrained_50.h5",
+        "Basic Model from Scratch": "../models/basic_model_from_scratch_100.h5"
+    }
 
     # Load the model
-    model = load_model("../models/model_pretrained_10.h5")
+    model = load_model(dict_models[model])
 
     # Preprocess the image
     image = image.resize((256, 256))
