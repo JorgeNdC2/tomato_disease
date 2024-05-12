@@ -21,11 +21,11 @@ st.markdown(
 
     You can navigate through the pages using the sidebar on the left, where you can find the following options:
 
-    - **Home**: This page.
+    - **Home** 🏘️: This page.
 
-    - **Models**: A summary with the results we have obtained from the models we have trained. You can find a line chart with the accuracy and validation accuracy of the models in the `Models` tab.
+    - **Models** 🤖: A summary with the results we have obtained from the models we have trained. You can find a line chart with the accuracy and validation accuracy of the models in the `Models` tab.
 
-    - **Data**: A summary of the data we have used to train our models. You can get a glimpse of the data in the `Data` tab.
+    - **Data** 📝: A summary of the data we have used to train our models. You can get a glimpse of the data in the `Data` tab.
     """
 )
 
@@ -48,10 +48,12 @@ if uploaded_file is not None:
 
     # Classify the image
     image = Image.open(uploaded_file)
-    prediction = predict_disease(image)
+    prediction, prob = predict_disease(image)
     st.write("Done! 🎉")
     st.write(f"Prediction: {prediction}" + 
-             (" 🍅! That's a good looking tomato!" if prediction == "Healthy" else " 🤒 You may want to take it to the tomato doctor 👨‍⚕️🏥"))
+             (" 🍅! That's a good looking tomato!" if prediction == "Healthy" 
+              else " disease 🤒 You may want to take it to the tomato doctor 👨‍⚕️🏥"))
+    st.write(f"Probability: {prob:.2f}")
 
 
 st.markdown(
