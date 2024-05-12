@@ -1,4 +1,4 @@
-# Tomato Leaf Disease project
+# Tomato Leaf Disease project 🍅
 
 ---
 
@@ -14,7 +14,7 @@ We have followed 2 approaches:
 
 We have developed a `Streamlit` app where you can upload your own tomato leaf photos and check if they have any known disease.
 
-## Authors
+## Authors 📧
 
 * Raúl Blázquez Bullón ([@raulblazquezb](https://github.com/raulblazquezb)).
 
@@ -34,10 +34,11 @@ pip install -r requirements.txt
 
 ## How to
 
-We have developed a `Streamlit` app where you can upload your own tomato leaf photos to try our model. Just run (make sure you have installed at least `streamlit` package with `pip`):
+We have developed a `Streamlit` app where you can upload your own tomato leaf photos to try our model. Just run (make sure you have installed the `requirements.txt` package with `pip`):
 
 ```bash
-python3 streamlit.py
+cd streamlit/
+streamlit run Home.py
 ```
 
-A `Streamlit` page will show up in your browser. Just drag the photo you want and `DenseNet121` + collaborators will do the rest :).
+A `Streamlit` page will show up in your browser on [localhost:8501](localhost:8501). Just drag the photo you want and `DenseNet121` + collaborators will do the rest 😄
