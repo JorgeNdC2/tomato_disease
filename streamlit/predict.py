@@ -11,7 +11,8 @@ def predict_disease(image: Image.Image, model: str="Pretrained Model") -> Tuple[
     # Dict models
     dict_models = {
         "Pretrained Model": "../models/model_pretrained_50.h5",
-        "Basic Model from Scratch": "../models/basic_model_from_scratch_100.h5"
+        "Basic Model from Scratch": "../models/basic_model_from_scratch_100.h5",
+        "CNN Model": "../models/cnn_model_70.h5",
     }
 
     # Load the model

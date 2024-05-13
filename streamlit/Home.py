@@ -41,13 +41,15 @@ st.markdown(
 
     - **Basic Model from Scratch**: A model trained from scratch with the Tomato Leaf Disease Dataset.
 
+    - **CNN Model**: Qirun
+
     Note that the pretrained model has a higher accuracy than the basic model from scratch, but has a higher computational cost.
 
     You can select the model you want to use in the dropdown below!
     """
 )
 
-model = st.selectbox("Select the model you want to use", ["Pretrained Model", "Basic Model from Scratch"])
+model = st.selectbox("Select the model you want to use", ["Pretrained Model", "Basic Model from Scratch", "CNN Model"])
 
 st.markdown(
     """
