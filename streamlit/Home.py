@@ -35,7 +35,7 @@ st.markdown(
 
     You can select the model you want to use to classify the tomato leaf image.
 
-    We have two models available:
+    We have three models available:
 
     - **Pretrained Model**: A model trained with a pretrained model (`DenseNet121`) and trained with the Tomato Leaf Disease Dataset.
 
