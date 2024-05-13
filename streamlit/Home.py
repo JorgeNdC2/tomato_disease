@@ -62,7 +62,7 @@ st.markdown(
 uploaded_file = st.file_uploader("Choose a tomato leaf image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    st.image(uploaded_file, caption="Uploaded tomato leaf.", use_column_width=True)
+    st.image(uploaded_file, caption="Uploaded tomato leaf.", width=364)
     st.write("")
     st.write("Classifying...")
 
@@ -73,7 +73,10 @@ if uploaded_file is not None:
     st.write(f"Prediction: {prediction}" + 
              (" 🍅! That's a good looking tomato!" if prediction == "Healthy" 
               else " disease 🤒 You may want to take it to the tomato doctor 👨‍⚕️🏥"))
-    st.write(f"Probability: {prob:.2f}")
+    st.write(f"Probability: {prob:.2f}" + 
+             (" ✅" if prob >= 0.8
+              else " ⚠️ Probability is a bit low, you should double check if the answer is OK" if prob >= 0.5 and prob < 0.8
+              else " ❌ Probability is too low, you should double check if the answer is OK"))
 
 
 st.markdown(

@@ -10,7 +10,7 @@ We have followed 2 approaches:
 
 * Building models from scratch and evaluating their performance. We have tried some architectures based on Non Structured Data Analysis lectures.
 
-* Loading a rather big pre-trained model, like `DenseNet121`, and add some more layers to it. This model has been by far the most accurate one and it is the one we use to predict the photos you upload.
+* Loading a rather big pre-trained model, like `DenseNet121`, and add some more layers to it. This model has been by far the most accurate one and it is the one we use to predict the photos you upload, although you can choose between models in a dropdown.
 
 We have developed a `Streamlit` app where you can upload your own tomato leaf photos and check if they have any known disease.
 

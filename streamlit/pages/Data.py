@@ -40,7 +40,7 @@ st.markdown(
 
     - Healthy
 
-    Let's take a look at some tomatoes from the dataset!
+    Let's take a look at some tomato leaves from the dataset!
     """
 )
 
