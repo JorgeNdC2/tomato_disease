@@ -71,5 +71,9 @@ st.markdown(
     The basic model from scratch has been trained with a custom model and the Tomato Leaf Disease Dataset.
     It has an accuracy of 0.92 and a validation accuracy of 0.81.
     This shows that the model is overfitting the data.
+
+    ### CNN Model
+
+    Qirun
     """
 )
