@@ -12,14 +12,14 @@ def predict_disease(image: Image.Image, model: str="Pretrained Model") -> Tuple[
     dict_models = {
         "Pretrained Model": "../models/model_pretrained_50.h5",
         "Basic Model from Scratch": "../models/basic_model_from_scratch_100.h5",
-        "CNN Model": "../models/cnn_model_70.h5",
+        "CNN Model": "../models/model_cnn_70.h5",
     }
 
     # Load the model
     model = load_model(dict_models[model])
 
     # Preprocess the image
-    image = image.resize((256, 256))
+    image = image.resize((256, 256)) if model != "CNN Model" else image.resize((224, 224))
     image = tf.keras.preprocessing.image.img_to_array(image)
     image = np.expand_dims(image/255.0, axis=0) # Normalization (same as in training) and adding a dimension for the batch
 
