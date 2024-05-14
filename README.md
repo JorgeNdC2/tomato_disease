@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## How to
 
-We have developed a `Streamlit` app where you can upload your own tomato leaf photos to try our model. Just run (make sure you have installed the `requirements.txt` package with `pip`):
+We have developed a `Streamlit` app where you can see the performance of our models and upload your own tomato leaf photos to try our model. Just run (make sure you have installed the `requirements.txt` package with `pip`):
 
 ```bash
 cd streamlit/
