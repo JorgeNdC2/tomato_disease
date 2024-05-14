@@ -20,7 +20,7 @@ We have developed a `Streamlit` app where you can upload your own tomato leaf ph
 
 * Jorge Núñez de Cela Román ([@JorgeNdC2](https://github.com/JorgeNdC2)).
 
-* Qirun Wu ([@quirunw](https://github.com/qirunw)).
+* Qirun Wu ([@qirunw](https://github.com/qirunw)).
 
 ## Requirements
 
