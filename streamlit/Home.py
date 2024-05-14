@@ -41,7 +41,7 @@ st.markdown(
 
     - **Basic Model from Scratch**: A model trained from scratch with the Tomato Leaf Disease Dataset.
 
-    - **CNN Model**: Qirun
+    - **CNN Model**: A model trained from scratch that consists in a convolutional neural network (CNN).
 
     Note that the pretrained model has a higher accuracy than the basic model from scratch, but has a higher computational cost.
 
@@ -96,7 +96,7 @@ st.markdown(
 
     - Jorge Núñez de Cela Román ([@JorgeNdC2](https://github.com/JorgeNdC2)).
 
-    - Qirun Wu ([@quirunw](https://github.com/qirunw)).
+    - Qirun Wu ([@qirunw](https://github.com/qirunw)).
     """,
 )
 
