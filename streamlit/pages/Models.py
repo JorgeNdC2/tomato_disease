@@ -23,11 +23,13 @@ st.markdown(
     """
     Here you can find the models we have trained for the Tomato Leaf Disease Project.
     
-    We have trained two models:
+    We have trained three models:
     
     - **Pretrained Model**: A model trained with a pretrained model (`DenseNet121`) and trained with the Tomato Leaf Disease Dataset.
     
     - **Basic Model from Scratch**: A model trained from scratch with the Tomato Leaf Disease Dataset.
+
+    - **CNN Model**: A model trained from scratch that consists in a convolutional neural network (CNN).
     
     You can find a line chart with the accuracy and validation accuracy of the models below! 📈
     """
@@ -74,6 +76,11 @@ st.markdown(
 
     ### CNN Model
 
-    Qirun
+    The CNN model has been trained wuth a custom model and the Tomato Leaf Disease Dataset.
+    The structure of this model includes several convolutional and max-pooling layers, followed by dense layers for final classification.
+    It has an accuracy of 0.97 and a validation accuracy of 0.96.    
+
+    Though we initially set 100 epochs, the model stopped training at epoch 70 due to early stopping, since the validation loss was not improving.
+
     """
 )
