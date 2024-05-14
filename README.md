@@ -24,7 +24,7 @@ We have developed a `Streamlit` app where you can upload your own tomato leaf ph
 
 ## Requirements
 
-We highly recommend using a virutal environment, like `virtualenv`.
+We highly recommend using a virtual environment, like `virtualenv`.
 
 To run the notebooks and codes, you have to install the packages:
 
