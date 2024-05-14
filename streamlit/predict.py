@@ -6,7 +6,7 @@ from PIL import Image
 from typing import Tuple
 
 # Functions
-def predict_disease(image: Image.Image, model: str="Pretrained Model") -> Tuple[str, float]:
+def predict_disease(image: Image.Image, model_str: str="Pretrained Model") -> Tuple[str, float]:
 
     # Dict models
     dict_models = {
@@ -16,10 +16,10 @@ def predict_disease(image: Image.Image, model: str="Pretrained Model") -> Tuple[
     }
 
     # Load the model
-    model = load_model(dict_models[model])
+    model = load_model(dict_models[model_str])
 
     # Preprocess the image
-    image = image.resize((256, 256)) if model != "CNN Model" else image.resize((224, 224))
+    image = image.resize((256, 256)) if model_str != "CNN Model" else image.resize((224, 224))
     image = tf.keras.preprocessing.image.img_to_array(image)
     image = np.expand_dims(image/255.0, axis=0) # Normalization (same as in training) and adding a dimension for the batch
 
