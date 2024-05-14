@@ -70,7 +70,7 @@ if uploaded_file is not None:
 
     # Classify the image
     image = Image.open(uploaded_file)
-    prediction, prob = predict_disease(image, model=model)
+    prediction, prob = predict_disease(image, model_str=model)
     st.write("Done! 🎉")
     st.write(f"Prediction: {prediction}" + 
              (" 🍅! That's a good looking tomato!" if prediction == "Healthy" 
